@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN" >
+<head>
+  <meta charset="UTF-8">
+<title>404</title>
+<link rel="shortcut icon" href="./media/SY-start-favicon.png">
+  <link rel="stylesheet" href="./css/style404.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- Thanks to @xontab -->
+<div id="page">
+		<div id="container">
+			<h1>:(</h1>
+			<h2>你的系统遇到了一些问题，此刻正在优化和上报故障信息，我们在未来将改善和减少这种情况的发生。</h2>
+			<h2>完成 <span id="percentage">0</span>%</h2>
+			<div id="details">
+				<div id="qr">
+					<div id="image">
+						<img id="qrcode" src="" alt="QR Code" />
+					</div>
+				</div>
+				<div id="stopcode">
+					<h5 style="font-size: 16px;"><br>不好意思！可能页面对您造成了困恼，这其实是一个404页面而已！</h5>
+					<h5 style="font-size: 16px;">如需返回请复制链接或者手机扫描左侧二维码：https://ihcll.cn</h5>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- partial -->
+  <script  src="./js/jr-qrcode.min404.js"></script>
+  <script  src="./js/script404.js"></script>
+<script>
+
+var postQrcode = jrQrcode.getQrBase64('https://ihcll.cn',{foreground: "#1c78bb"});
+
+document.getElementById("qrcode").setAttribute('src',postQrcode);
+</script>
+<div style="position: absolute; bottom: 10px; right: 10px; font-size: 10px;">温馨提示：你可以按F11键以全屏</div>
+</body>
+</html>

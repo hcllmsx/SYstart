@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>思媛起始页</title>
+    <link rel="apple-touch-icon-precomposed" href="./media/SY-start-logo.png">
+    <meta name="msapplication-TileImage" content="./media/SY-start-logo.png">
+    <link rel="shortcut icon" href="./media/SY-start-favicon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="full-screen" content="yes">
+    <!--UC强制全屏-->
+    <meta name="browsermode" content="application">
+    <!--UC应用模式-->
+    <meta name="x5-fullscreen" content="true">
+    <!--QQ强制全屏-->
+    <meta name="x5-page-mode" content="app">
+    <!--QQ应用模式-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" id="font-awesome-css" href="./css/all.min.css" type="text/css" media="all"> <!-- https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css?ver=1.1422 -->
+    <script src="./js/jquery.min.js"></script> <!-- https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js -->
+    <script src="https://at.alicdn.com/t/font_3347159_bsngdhqbq2w.js"></script> <!-- 这里是 https://www.iconfont.cn/ 的symbol地址 -->
+    <script src="./js/sou.js"></script>
+    <link rel='stylesheet' href='./css/style.css'>
+</head>
+
+<body>
+    <!--头部背景-视频或者图片-->
+    <div class="banner-video">
+        <!--视频banner，与下面的图片banner只能任选其中的一种-->
+        <video autoplay loop muted><source src="./media/paper from the sky - by msx.mp4" type="video/mp4"></video>
+
+        <!--图片banner，与上面的视频banner只能任选其中的一种-->
+        <!-- <img src="https://img-blog.csdnimg.cn/85fd741cd78c4d5f863337de9266a116.png" alt=""> -->
+        
+        <div class="bottom-cover" style="background-image: linear-gradient(rgba(255, 255, 255, 0) 0%, rgb(244 248 251 / 0.6) 50%, rgb(244 248 251) 100%);"></div>
+    </div>
+    <!--topbar开始-->
+    <style>
+        .navbar-toggler svg {
+            width: 24px;
+            height: 24px;
+        }
+        
+        .navbar-toggler .bi-list-nested {
+            display: none;
+        }
+        
+        .navbar-toggler.collapsed .bi-list-nested {
+            display: block;
+        }
+        
+        .navbar-toggler.collapsed .bi-x {
+            display: none;
+        }
+        
+        .navbar-toggler .bi-x {
+            display: block;
+        }
+    </style>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="position: absolute; z-index: 10000;">
+        <a class="navbar-brand" href=""><img src="./media/SY-start-logo.png" height="35" style="margin-left: -1px;" alt=""></a>
+        <!--不知道干啥的-->
+        <button class="navbar-toggler collapsed" style="border: none; outline: none;" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="bi bi-list-nested" fill="currentColor" id="list-nested">
+                <path fill-rule="evenodd" d="M4.5 11.5A.5.5 0 015 11h10a.5.5 0 010 1H5a.5.5 0 01-.5-.5zm-2-4A.5.5 0 013 7h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm-2-4A.5.5 0 011 3h10a.5.5 0 010 1H1a.5.5 0 01-.5-.5z"></path>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="bi bi-x" fill="currentColor" id="x">
+                <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 010 .708l-7 7a.5.5 0 01-.708-.708l7-7a.5.5 0 01.708 0z"></path>
+                <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 000 .708l7 7a.5.5 0 00.708-.708l-7-7a.5.5 0 00-.708 0z"></path>
+            </svg>
+        </button>
+        <!--不知道干啥的 结束-->
+        <div class="collapse navbar-collapse" id="navbarsExample05">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="https://ihcll.cn" target="_blant">火车啦啦</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://qydz.ihcll.cn" target="_blant">情有独钟</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+            </ul>
+            <style>
+                #he-plugin-simple {
+                    z-index: 999;
+                }
+            </style>
+            <!--和风天气插件-->
+            <div id="he-plugin-simple"></div>
+            <script>
+            WIDGET = {
+              "CONFIG": {
+                "modules": "01234",
+                "background": "5",
+                "tmpColor": "FFFFFF",
+                "tmpSize": "16",
+                "cityColor": "FFFFFF",
+                "citySize": "16",
+                "aqiColor": "FFFFFF",
+                "aqiSize": "16",
+                "weatherIconSize": "24",
+                "alertIconSize": "18",
+                "padding": "10px 10px 10px 10px",
+                "shadow": "1",
+                "language": "auto",
+                "borderRadius": "6",
+                "fixed": "false",
+                "vertical": "center",
+                "horizontal": "center",
+                "city": "CN101251103", //固定位置为 慈利  其他城市列表参考 https://github.com/qwd/LocationList
+                "key": "f8e2493cd9944f1c804e88e66da487a1"
+              }
+            }
+            </script>
+            <script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script>
+            <!-- 和风天气插件  结束 -->
+        </div>
+    </nav>
+    <!--topbar结束-->
+    <div class="container" style="margin-top: 100px; position: relative; z-index: 100;">
+        <!--搜索开始-->
+        <div id="search" class="s-search">
+            <div id="search-list" class="hide-type-list">
+                <div class="search-group group-a s-current" style="padding-left: 20px">
+                    <ul class="search-type">
+                        <li><input checked="" hidden="" type="radio" name="type" id="type-baidu" value="https://www.baidu.com/s?wd=" data-placeholder="百度两下，你不知道"><label for="type-baidu"><span style="color:#2100E0">百度</span></label></li>
+                        <li><input hidden="" type="radio" name="type" id="type-google" value="https://www.google.com.hk/search?hl=zh-CN&q=" data-placeholder="谷歌一下，你就知道"><label for="type-google"><span style="color:#3B83FA">G</span><span style="color:#F3442C">o</span><span style="color:#FFC300">o</span><span style="color:#4696F8">g</span><span style="color:#2CAB4E">l</span><span style="color:#F54231">e</span></label></li>
+                        <li><input hidden="" type="radio" name="type" id="type-duckgo" value="https://duckduckgo.com/?q=" data-placeholder="隐私保护，化繁为简"><label for="type-duckgo"><span style="color:#2100E0">DuckDuckGo</span></label></li>
+                        <li><input hidden="" type="radio" name="type" id="type-bilibili" value="https://search.bilibili.com/all?keyword=" data-placeholder="叔叔我啊，23333"><label for="type-bilibili"><span style="color:#2100E0">哔哩哔哩</span></label></li>
+                        <li><input hidden="" type="radio" name="type" id="type-douban" value="https://search.douban.com/movie/subject_search?search_text=" data-placeholder="查一查先，评分不高的不看"><label for="type-douban"><span style="color:#2100E0">豆瓣</span></label></li>
+                        <li><input hidden="" type="radio" name="type" id="type-dnspod" value="https://buy.cloud.tencent.com/domain?domain=" data-placeholder="输入你想要购买的域名，例如：ihcll.cn"><label for="type-dnspod"><span style="color:#2100E0">域名注册查询</span></label></li>
+                    </ul>
+                </div>
+            </div>
+            <form action="https://www.baidu.com/s?wd=" method="get" target="_blank" id="super-search-fm">
+                <input type="text" id="search-text" placeholder="百度一下" style="outline:0" autocomplete="off">
+                <button class="submit" type="submit"><svg style="width: 20px; height: 20px; margin:7px 0; color: #29f;" class="icon" aria-hidden="true"><use xlink:href="#sy-sousuo"></use></svg><span></button>
+                <ul id="word" style="display: none;"></ul>
+            </form>
+            <div class="set-check hidden-xs">
+                <input type="checkbox" id="set-search-blank" class="bubble-3" autocomplete="off">
+            </div>
+        </div>
+        <!--搜索结束-->
+
+        <!-- 导航列表：一个分类的开始 -->
+        <ul class="mylist row">
+
+            <li class="title"><svg class="icon" aria-hidden="true"><use xlink:href="#sy-fldianying"></use></svg> 电影电视剧</li> <!-- 此分类的名字 -->
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://tv.cctv.com/live/index.shtml" title="这不用多说了吧" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-cctv"></use></svg>
+                <span>CCTV直播</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.acfun.cn/" title="AcFun - 国内首家弹幕视频网站" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-acfun"></use></svg>
+                <span>AcFun</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.bilibili.com/" title="哔哩哔哩bilibili - 你感兴趣的视频都在这里" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-bilibili"></use></svg>
+                <span>哔哩哔哩</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.newzmz.com/index.html" title="NEW字幕组" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-newzmz"></use></svg>
+                <span>NEW字幕组</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://yanetflix.com/" title="鸭奈飞电影-专注于为国内用户提供免费的奈飞影剧" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-yanetflix"></use></svg>
+                <span>鸭奈飞电影</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="http://www.novipnoad.com/" title="NOVIPNOAD为用户提供及时的海外热门剧集在线观看，友好无广告，致力于最轻松的追剧体验" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-noshipin"></use></svg>
+                <span>NO视频</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.btnull.org/" title="BTNULL无名小站-高清影视资源下载 失联邮箱info@btnull.org" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-btnull"></use></svg>
+                <span>BTNULL</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.a4k.net/" title="字幕下载网站 | A4k字幕网" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-a4k"></use></svg>
+                <span>A4k字幕网</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.btbdys.com/" title="哔嘀影视-失联链接（需魔法） bdys.me" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-fldianying"></use></svg>
+                <span>哔嘀影视</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.domp4.cc/" title="DOMP4电影-失联邮箱domp4@yahoo.com" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-fldianying"></use></svg>
+                <span>DOMP4电影</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.bd2020.co/" title="BD影视分享-最新高清电影资源免费下载" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-fldianying"></use></svg>
+                <span>BD影视分享</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://juhuang.tv/" title="剧荒TV-告别剧荒，超清在线视频站" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-fldianying"></use></svg>
+                <span>剧荒TV</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.mp4fan.org/" title="高清MP4粉-据说是MP4BA来的，自行分辨真假" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-fldianying"></use></svg>
+                <span>高清MP4粉</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://ddrk.me/" title="低端影视-超清在线视频站" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-fldianying"></use></svg>
+                <span>低端影视</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.kyikan.cc/" title="看一看高清影视网-最新免费电影在线观看" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-kyikan"></use></svg>
+                <span>看一看影视</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.mini4k.com/" title="mini4k迷客电影，每日更新最新电影资源" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-mini4k"></use></svg>
+                <span>mini4k迷客</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.youtube.com/" title="就是通常说的油管啦" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-youtube"></use></svg>
+                <span>YouTube</span></a></li>
+        </ul>
+        <!-- 导航列表：一个分类的结束 -->
+
+        <!-- 导航列表：一个分类的开始 -->
+        <ul class="mylist row">
+
+            <li class="title"><svg class="icon" aria-hidden="true"><use xlink:href="#sy-flsheji"></use></svg> 视频和设计等工作类</li> <!-- 此分类的名字 -->
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://huaban.com/" title="花瓣网-陪你做生活的设计师" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-huabanwang"></use></svg>
+                <span>花瓣网</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://818ps.com/" title="图怪兽作图神器-在线图片编辑器-PS图片制作-搞定平面设计不求人" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-tuguaishou"></use></svg>
+                <span>图怪兽</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://ibaotu.com/" title="包图网_专注原创商用设计图片下载，会员免费设计素材模板独家图库" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-baotuwang"></use></svg>
+                <span>包图网</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.58pic.com/" title="千图网-免费设计图片素材网站-正版图库免费设计素材中国" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-qiantuwang"></use></svg>
+                <span>千图网</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://669pic.com/" title="万素网-png矢量图背景图片下载-psd摄影图片素材" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-tupian"></use></svg>
+                <span>万素网</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.16pic.com/" title="六图网-psd素材网_免费设计素材下载_正版高清图片下载库" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-tupian"></use></svg>
+                <span>六图网</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.aigei.com/" title="中国最大的数字娱乐免费素材下载网站，提供免费的音效配乐|3D模型|视频|游戏素材资源" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-shengyin"></use></svg>
+                <span>爱给网</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://ixintu.com/" title="新图网-免费png图片背景素材ppt模板" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-xintuwang"></use></svg>
+                <span>新图网</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.lanrentuku.com/" title="懒人图库-矢量图，JS代码，网页素材-学会偷懒，懒出境界！" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-tupian"></use></svg>
+                <span>懒人图库</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.iconfont.cn/" title="iconfont-国内功能很强大且图标内容很丰富的矢量图标库，提供矢量图标下载、在线存储、格式转换等功能。阿里巴巴体验团队倾力打造，设计和前端开发的便捷工具" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-iconfont"></use></svg>
+                <span>iconfont</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://wall.alphacoders.com/?lang=Chinese" title="Wallpaper Abyss - 高清壁纸，桌面背景" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-wallabyss"></use></svg>
+                <span>Wallpaper Abyss</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.pexels.com/zh-cn/" title="免费素材图片和视频，可以在任何地方使用。✓ 高质量 ✓ 100% 免费✓ 无需注明归属" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-Pexels"></use></svg>
+                <span>Pexels</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://wallroom.io/" title="HD/4K/5K Resolution Wallpapers/Backgrounds ▪ Wallroom.io" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-tupian"></use></svg>
+                <span>Wallroom</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://wallhaven.cc/" title="Your source for the best high quality wallpapers on the Net!" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-tupian"></use></svg>
+                <span>Wallhaven</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.pinterest.com/" title="Pinterest 是一个以视觉方式发现创意点子的地方" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-pinterest"></use></svg>
+                <span>Pinterest</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://taira-komori.jpn.org/freesoundcn.html" title="小森平的免费下载音效" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-shengyin"></use></svg>
+                <span>小森平</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.ear0.com/" title="耳聆网-听见世界之美-声音分享云|音效素材库" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-shengyin"></use></svg>
+                <span>耳聆网</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.toptal.com/designers/subtlepatterns/" title="Subtle Patterns | Free textures for your next web project" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-toptal"></use></svg>
+                <span>免费纹理</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://asoftmurmur.com/" title="Mix ambient sounds together to wash away distraction and help you focus or relax" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-asoftmurmur"></use></svg>
+                <span>Soft Murmur</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://huke88.com/" title="虎课网-设计、办公软件视频教程在线学习_每天免费学一课" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-huke88"></use></svg>
+                <span>虎课网</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.xinpianchang.com/" title="新片场-发现全球优质视频与创作人，与百万创作人一起成长" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-xinpianchang"></use></svg>
+                <span>新片场</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.lookae.com/" title="LookAE.com 是大众脸为您提供的CG后期技术交流平台，欢迎您的到来" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-AdobeAe"></use></svg>
+                <span>LookAE</span></a></li>
+        </ul>
+        <!-- 导航列表：一个分类的结束 -->
+
+
+        <!-- 导航列表：一个分类的开始 -->
+        <ul class="mylist row">
+
+            <li class="title"><svg class="icon" aria-hidden="true"><use xlink:href="#sy-flyunzhuji"></use></svg> 云服务或建站相关</li> <!-- 此分类的名字 -->
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://console.dnspod.cn/" title="致力于为各类网站提供高质量的电信、网通、教育网双线或者三线智能DNS免费解析" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-dnspod"></use></svg>
+                <span>DNSPod</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://home.console.aliyun.com/home/dashboard/ProductAndService" title="阿里云是阿里巴巴集团旗下公司，是全球领先的云计算及人工智能科技公司。" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-aliyun"></use></svg>
+                <span>阿里云</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.dogecloud.com/?iuid=1759" title="DogeCloud 强大易用的企业级视频应用引擎，多吉云" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-dogecloud"></use></svg>
+                <span>多吉云</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://dash.cloudflare.com/" title="Cloudflare 是一个全球性的云平台，它为世界各地的各种规模的企业提供广泛的网络服务" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-cloudflare"></use></svg>
+                <span>CloudFlare</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.oracle.com/cn/cloud/sign-in.html" title="财大气粗的甲骨文云，请善待它" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-oraclecloud"></use></svg>
+                <span>Oracle</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://my.freenom.com/clientarea.php" title="免费域名提供商" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-flyunzhuji"></use></svg>
+                <span>Freenom</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://gitee.com/" title="国内代码托管·协作开发平台，提供企业级代码托管服务，成为开发领域领先的 SaaS 服务提供商" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-gitee"></use></svg>
+                <span>码云</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://su.baidu.com/" title="百度云加速-免费CDN、网站攻击防护、SEO优化工具" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-bdyunjiasu"></use></svg>
+                <span>百度CDN</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://linuxone.cloud.marist.edu/#/login" title="IBM LinuxONE Community Cloud" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-linuxone"></use></svg>
+                <span>IBM LinuxOne</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://id.heroku.com/login" title="Heroku是一个支持多种编程语言的云平台即服务" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-heroku"></use></svg>
+                <span>HEROKU</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://portal.dedipath.com/login" title="优惠码 CNY5021 不晓得还能不能用" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-flyunzhuji"></use></svg>
+                <span>DediPath</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.vultr.com/zh/" title="一个国外的云服务商 2022仅限新人优惠码 VULTRMATCH" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-vultr"></use></svg>
+                <span>VULTR</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://cloud.atlantic.net/?page=userlogin" title="一家能免费用一年VPS的国外云服务商，注册账户有点麻烦，登录时需要各显神通" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-atlantic"></use></svg>
+                <span>ATLANTIC</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://portal.azure.com/" title="微软提供的云服务，可免费使用一年VPS" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-azure"></use></svg>
+                <span>AZure</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://developer.microsoft.com/zh-cn/microsoft-365/profile" title="Microsoft 365 开发人员计划" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-microsoft365"></use></svg>
+                <span>Microsoft365 E5</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.ucloud.cn/" title="UCloud优刻得-首家公有云科创板上市公司" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-Ucloud"></use></svg>
+                <span>UCloud</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.dynadot.com/zh/" title="注册域名，赠送建站工具！Dynadot帮您轻轻松松制作精美网站！" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-yuming"></use></svg>
+                <span>Dynadot</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.namesilo.com/" title="Cheap Domain Names & Web Hosting Starting at $0.99! | NameSilo" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-yuming"></use></svg>
+                <span>NameSilo</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://cn.resellerclub.com/shared-hosting" title="ResellerClub虚拟主机服务商提供海外主机无限空间，无限流量" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-yuming"></use></svg>
+                <span>ResellerClub</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://freessl.cn/" title="一个提供免费HTTPS证书申请的网站" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-freessl"></use></svg>
+                <span>FreeSSL</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://ohttps.com/monitor/dashboard" title="OHTTPS - 免费HTTPS证书、自动更新、自动部署" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-ohttps"></use></svg>
+                <span>OHTTPS</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://panel.myownfreehost.net/" title="免费空间 MyOwnFreeHost" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-flyunzhuji"></use></svg>
+                <span>MyOwnFreeHost</span></a></li>
+        </ul>
+        <!-- 导航列表：一个分类的结束 -->
+
+        <!-- 导航列表：一个分类的开始 -->
+        <ul class="mylist row">
+
+            <li class="title"><svg class="icon" aria-hidden="true"><use xlink:href="#sy-flgongju"></use></svg> 一些可能会用的小工具</li> <!-- 此分类的名字 -->
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://suowo.cn/" title="缩我短链接-短信社群推广-老牌短网址工具-连通性好-永久免费" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-suowo"></use></svg>
+                <span>缩我短链接</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.iloveimg.com/zh-cn" title="iLoveIMG是一个完全免费的在线处理图片文件的网站" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-tupianchuli"></use></svg>
+                <span>iLoveIMG</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://tiomg.org/compress-image-pro" title="自定义图片压缩，免费、安全和专业的在线图片压缩工具，免费无水印在线压缩图片" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-huojian"></use></svg>
+                <span>Tiomg</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://docsmall.com/" title="docsmall - 免费在线图片压缩、GIF压缩工具、PDF压缩工具、PDF合并工具、PDF分割工具" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-docsmall"></use></svg>
+                <span>docsmall</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.aconvert.com/cn/" title="在线转换文档，图像，视频，音频文件" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-aconvert"></use></svg>
+                <span>aconvert在线转换</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://cdkm.com/cn/" title="将文件从一种格式转换为另一种格式" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-cdkm"></use></svg>
+                <span>cdkm在线转换</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.tutieshi.com/" title="在线图片压缩_视频转GIF软件_GIF裁剪合成工具-图贴士_原GIF工具之家" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-tupianchuli"></use></svg>
+                <span>图贴士</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://gifcompressor.com/zh/" title="GIF压缩 – 在线压缩GIF动画" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-gifcompressor"></use></svg>
+                <span>GIF压缩</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://tp.hefollo.com/" title="单文件最大500M的免费视频外链网盘 免费图床 图片外链" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-wangpan"></use></svg>
+                <span>惜染外链</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://imagelol.com/" title="笑果图床（LOL图床）-免费公共图床，快速分享图片外链，分享美好生活" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-tupian1"></use></svg>
+                <span>笑果图床</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://ghproxy.com/" title="GitHub 文件代理加速下载服务" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-GitHub"></use></svg>
+                <span>GitHub加速 A</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://pd.zwc365.com/" title="GitHub 文件代理加速下载服务" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-GitHub"></use></svg>
+                <span>GitHub加速 B</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://d.serctl.com/" title="GitHub 文件代理加速下载服务" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-GitHub"></use></svg>
+                <span>GitHub加速 C</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://tools.miku.ac/" title="MikuTools - 一个轻量的工具集合" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-flgongju"></use></svg>
+                <span>Miku工具箱</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://oktools.net/" title="OKTools是一个在线工具网站" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-flgongju"></use></svg>
+                <span>OKTools</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://tool.oschina.net/" title="OSCHINA.NET在线工具，ostools为开发设计人员提供在线工具" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-ostools"></use></svg>
+                <span>OSTools</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.w3school.com.cn/index.html" title="全球最大的中文 Web 技术教程" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-w3school"></use></svg>
+                <span>W3school</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.runoob.com/" title="菜鸟教程-学的不仅是技术，更是梦想！" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-runoob"></use></svg>
+                <span>菜鸟教程</span></a></li>
+        </ul>
+        <!-- 导航列表：一个分类的结束 -->
+
+        <!-- 导航列表：一个分类的开始 -->
+        <ul class="mylist row">
+
+            <li class="title"><svg class="icon" aria-hidden="true"><use xlink:href="#sy-flxiazai"></use></svg> 网盘或软件资源下载</li> <!-- 此分类的名字 -->
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.aliyundrive.com/drive" title="阿里云盘是一款速度快、不打扰、够安全、易于分享的网盘" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-aliyunpan"></use></svg>
+                <span>阿里云盘</span></a></li>
+        
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://pan.baidu.com/" title="百度网盘为您提供文件的网络备份、同步和分享服务" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-baiduwangpan"></use></svg>
+                <span>百度网盘</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://115.com/" title="115，一生相伴" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-wangpan115"></use></svg>
+                <span>115网盘</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://pc.woozooo.com/" title="来这里，下载无限制，无验证码，畅快淋漓尽致" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-lanzouyun"></use></svg>
+                <span>蓝奏云</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.123pan.com/login" title="123云盘鼓励优质原创内容分享，专注大型文件存储分发，誓将免费高速进行到底！" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-yunpan123"></use></svg>
+                <span>123云盘</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://lingshulian.com/" title="打破传统网页限制，在网络环境较差的情况下，依然保持着满速下载" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-wangpan"></use></svg>
+                <span>棱束链</span></a></li>
+            
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://cowtransfer.com/" title="奶牛快传 | 免费大文件传输工具 上传下载不限速" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-nainiukuaichuan"></use></svg>
+                <span>奶牛快传</span></a></li>
+            
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.wenshushu.cn/" title="文叔叔是一款永不限速的网盘（云盘）产品，免费提供网络硬盘空间 40GB" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-wenshushu"></use></svg>
+                <span>文叔叔</span></a></li>
+        
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://app.mediatrack.cn/welcome/passwordLogin" title="让创意沟通无界限-分秒帧-音视频协作与管理平台" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-shipin"></use></svg>
+                <span>分秒帧</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.pan666.cn/" title="一个阿里云盘资源共享站" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-wangpan"></use></svg>
+                <span>Pan666</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.sssoou.com/" title="可以搜索电影、网盘、教程等资源" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-telegramsou"></use></svg>
+                <span>TG中文搜索</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.rarbgmirror.com/torrents.php" title="RARBG Torrents , films , download" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-rarbg"></use></svg>
+                <span>RARBG</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.423down.com/" title="更新快、专注去广告类软件输出10年、个人IP品牌软件分享站" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-flxiazai"></use></svg>
+                <span>423Down</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://fsylr.com/" title="专注于手机与电脑资源、软件、工具、教程的分享平台" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-flxiazai"></use></svg>
+                <span>发烧友绿软</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="http://www.dayanzai.me/" title="大眼仔旭 - 专注视频剪辑、解压、录屏、思维导图等办公资源分享" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-flxiazai"></use></svg>
+                <span>大眼仔旭</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.iplaysoft.com/" title="极具人气和特色的软件网站！专注于推荐优秀软件、APP应用和互联网资源" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-flxiazai"></use></svg>
+                <span>异次元</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.weidown.com/" title="微当下载是一个免费的软件下载站，全站下载提供CDN加速，让您享受满速下载的体验" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-flxiazai"></use></svg>
+                <span>微当下载</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://vip.jokerps.com/" title="鹏少资源网 | 专注于精品软件收录分享" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-flxiazai"></use></svg>
+                <span>鹏少资源网</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://byrut.org/" title="通过种子将游戏免费下载到PC" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-zhongzi"></use></svg>
+                <span>BYRUTOR</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://rutracker.org/forum/index.php" title="俄罗斯免费盗版资源论坛" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-zhongzi"></use></svg>
+                <span>RUTRACKER</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.mirrored.to/" title="一个国外的一键上传文件到多个网盘的网站" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-wangpan"></use></svg>
+                <span>mirrored.to</span></a></li>
+        </ul>
+        <!-- 导航列表：一个分类的结束 -->
+
+        <!-- 导航列表：一个分类的开始 -->
+        <ul class="mylist row">
+
+            <li class="title"><svg class="icon" aria-hidden="true"><use xlink:href="#sy-syshuye"></use></svg> 乱七八糟的不常用还不想分类</li> <!-- 此分类的名字 -->
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://mail.qq.com/" title="QQ邮箱不用多说了吧" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-tengxunwang"></use></svg>
+                <span>QQ邮箱</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://qiye.aliyun.com/" title="阿里企业邮箱，构建在阿里云飞天平台上的企业邮箱" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-alimail"></use></svg>
+                <span>阿里企业邮箱</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://exmail.qq.com/login" title="不只是邮箱，更是一种高效办公新体验" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-txqymail"></use></svg>
+                <span>腾讯企业邮箱</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.teambition.com/" title="Teambition · 阿里巴巴旗下团队协作工具" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-teambition"></use></svg>
+                <span>Teambition</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.yikm.net/" title="小霸王，其乐无穷。红白机，FC在线游戏，街机游戏在线，NES games" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-xiaobawang"></use></svg>
+                <span>在线小霸王</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://ec.easypayx.com/login" title="易贝卡" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-yinhangka"></use></svg>
+                <span>易贝卡</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://segmentfault.com/" title="在这里你可以检索，交流和分享任何技术编程相关的问题及知识" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-SegmentFault"></use></svg>
+                <span>思否SF</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://steamdb.info/" title="SteamDB - Steam数据库" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-steam"></use></svg>
+                <span>Steam DB</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://asciiflow.com/#/" title="将一副画转换成众多文字汇聚成的样子" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-syshuye"></use></svg>
+                <span>画成字符</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://zh.wikihow.com/%E9%A6%96%E9%A1%B5" title="你可以信赖的万事指南-互联网上最值得信赖的指南网站" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-wikihow"></use></svg>
+                <span>wikiHow</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.autopiano.cn/" title="自由钢琴 AutoPiano | 在线钢琴，键盘钢琴，模拟钢琴，多种乐器选择，好听又好玩" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-gangqin"></use></svg>
+                <span>自由钢琴</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://thispersondoesnotexist.com/" title="每次刷新会自动生成一个现实的头像照片，而可能在世界上都找不到与头像所对应这个人" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-touxiang"></use></svg>
+                <span>此人不存在</span></a></li>
+
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.ageeye.cn/" title="观沧海是⼀个知识地图制作分享平台，它将地图和文字结合，反映中国历史、军事、地理、文化等方面的知识，向用户提供地图协作分享服务" target="_blank">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#sy-ageeye"></use></svg>
+                <span>观沧海</span></a></li>
+        </ul>
+        <!-- 导航列表：一个分类的结束 -->
+    </div>
+    <!--版权信息开始-->
+    <p class="mt-5 mb-3 text-muted text-center">©<script>document.write(new Date().getFullYear())</script> <a href="https://ihcll.cn/">火车啦啦 - 思媛起始页</a></p>
+    <!--
+        作者:D.Young
+        主页：https://blog.5iux.cn/
+        github：https://github.com/5iux/5iux.github.io
+        日期：2021-08-02
+        版权所有，请勿删除
+        ----------------------------------------
+        修改日期：2022-05-12
+        修改：火车啦啦
+        主页：https://ihcll.cn
+    -->
+    <!--版权信息结束-->
+    <script>
+    eval(function(e, t, a, c, i, n) {
+        if (i = function(e) {
+                return (e < t ? "" : i(parseInt(e / t))) + (35 < (e %= t) ? String.fromCharCode(e + 29) : e.toString(36))
+            }, !"".replace(/^/, String)) {
+            for (; a--;) n[i(a)] = c[a] || i(a);
+            c = [function(e) {
+                return n[e]
+            }], i = function() {
+                return "\\w+"
+            }, a = 1
+        }
+        for (; a--;) c[a] && (e = e.replace(new RegExp("\\b" + i(a) + "\\b", "g"), c[a]));
+        return e
+    }('!2(){2 g(){h(),i(),j(),k()}2 h(){d.9=s()}2 i(){z a=4.8(\'A[B="7"][5="\'+p()+\'"]\');a&&(a.9=!0,l(a))}2 j(){v(u())}2 k(){w(t())}2 l(a){P(z b=0;b<e.O;b++)e[b].I.1c("s-M");a.F.F.F.I.V("s-M")}2 m(a,b){E.H.S("L"+a,b)}2 n(a){6 E.H.Y("L"+a)}2 o(a){f=a.3,v(u()),w(a.3.5),m("7",a.3.5),c.K(),l(a.3)}2 p(){z b=n("7");6 b||a[0].5}2 q(a){m("J",a.3.9?1:-1),x(a.3.9)}2 r(a){6 a.11(),""==c.5?(c.K(),!1):(w(t()+c.5),x(s()),s()?E.U(b.G,+T X):13.Z=b.G,10 0)}2 s(){z a=n("J");6 a?1==a:!0}2 t(){6 4.8(\'A[B="7"]:9\').5}2 u(){6 4.8(\'A[B="7"]:9\').W("14-N")}2 v(a){c.1e("N",a)}2 w(a){b.G=a}2 x(a){a?b.3="1a":b.16("3")}z y,a=4.R(\'A[B="7"]\'),b=4.8("#18-C-19"),c=4.8("#C-12"),d=4.8("#17-C-15"),e=4.R(".C-1b"),f=a[0];P(g(),y=0;y<a.O;y++)a[y].D("Q",o);d.D("Q",q),b.D("1d",r)}();', 62, 77, "||function|target|document|value|return|type|querySelector|checked||||||||||||||||||||||||||var|input|name|search|addEventListener|window|parentNode|action|localStorage|classList|newWindow|focus|superSearch|current|placeholder|length|for|change|querySelectorAll|setItem|new|open|add|getAttribute|Date|getItem|href|void|preventDefault|text|location|data|blank|removeAttribute|set|super|fm|_blank|group|remove|submit|setAttribute".split("|"), 0, {}));
+    </script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>
