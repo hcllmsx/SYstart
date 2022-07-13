@@ -6,6 +6,20 @@
   "description": "思媛起始页采用图标",
   "glyphs": [
     {
+      "icon_id": "6145580",
+      "name": "map",
+      "font_class": "map",
+      "unicode": "e655",
+      "unicode_decimal": 58965
+    },
+    {
+      "icon_id": "15378657",
+      "name": "openstreetmap",
+      "font_class": "openstreetmap",
+      "unicode": "ec44",
+      "unicode_decimal": 60484
+    },
+    {
       "icon_id": "1321521",
       "name": "Pixabay",
       "font_class": "Pixabay",

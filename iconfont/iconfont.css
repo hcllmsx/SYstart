@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont"; /* Project id 3347159 */
-  src: url('iconfont.woff2?t=1656903608883') format('woff2'),
-       url('iconfont.woff?t=1656903608883') format('woff'),
-       url('iconfont.ttf?t=1656903608883') format('truetype');
+  src: url('iconfont.woff2?t=1657724094125') format('woff2'),
+       url('iconfont.woff?t=1657724094125') format('woff'),
+       url('iconfont.ttf?t=1657724094125') format('truetype');
 }
 
 .iconfont {
@@ -11,6 +11,14 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.sy-map:before {
+  content: "\e655";
+}
+
+.sy-openstreetmap:before {
+  content: "\ec44";
 }
 
 .sy-Pixabay:before {
