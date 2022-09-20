@@ -6,6 +6,20 @@
   "description": "思媛起始页采用图标",
   "glyphs": [
     {
+      "icon_id": "1261002",
+      "name": "500px",
+      "font_class": "500px",
+      "unicode": "e62c",
+      "unicode_decimal": 58924
+    },
+    {
+      "icon_id": "1321537",
+      "name": "摄图网",
+      "font_class": "shetuwang",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
       "icon_id": "6145580",
       "name": "map",
       "font_class": "map",
