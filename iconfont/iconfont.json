@@ -6,6 +6,13 @@
   "description": "思媛起始页采用图标",
   "glyphs": [
     {
+      "icon_id": "31921530",
+      "name": "光厂vjshi",
+      "font_class": "vjshi",
+      "unicode": "e62e",
+      "unicode_decimal": 58926
+    },
+    {
       "icon_id": "1261002",
       "name": "500px",
       "font_class": "500px",
