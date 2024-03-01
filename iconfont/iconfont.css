@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont"; /* Project id 3347159 */
-  src: url('iconfont.woff2?t=1663652701280') format('woff2'),
-       url('iconfont.woff?t=1663652701280') format('woff'),
-       url('iconfont.ttf?t=1663652701280') format('truetype');
+  src: url('iconfont.woff2?t=1709271166766') format('woff2'),
+       url('iconfont.woff?t=1709271166766') format('woff'),
+       url('iconfont.ttf?t=1709271166766') format('truetype');
 }
 
 .iconfont {
@@ -11,6 +11,34 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.sy-baiduwxyy:before {
+  content: "\100b4";
+}
+
+.sy-xunfeixh:before {
+  content: "\100b5";
+}
+
+.sy-alityqw:before {
+  content: "\100b6";
+}
+
+.sy-chatgpt:before {
+  content: "\100b7";
+}
+
+.sy-free3d:before {
+  content: "\100b3";
+}
+
+.sy-aws:before {
+  content: "\f16a";
+}
+
+.sy-houzi:before {
+  content: "\e62b";
 }
 
 .sy-vjshi:before {
@@ -145,20 +173,12 @@
   content: "\100b0";
 }
 
-.sy-rarbg:before {
-  content: "\e629";
-}
-
 .sy-telegramsou:before {
   content: "\e6f0";
 }
 
 .sy-shipin:before {
   content: "\e644";
-}
-
-.sy-wenshushu:before {
-  content: "\e61c";
 }
 
 .sy-nainiukuaichuan:before {
@@ -225,10 +245,6 @@
   content: "\e616";
 }
 
-.sy-huojian:before {
-  content: "\e613";
-}
-
 .sy-tupianchuli:before {
   content: "\e612";
 }
@@ -259,10 +275,6 @@
 
 .sy-azure:before {
   content: "\e626";
-}
-
-.sy-atlantic:before {
-  content: "\100aa";
 }
 
 .sy-vultr:before {
@@ -309,10 +321,6 @@
   content: "\e60a";
 }
 
-.sy-huke88:before {
-  content: "\e608";
-}
-
 .sy-asoftmurmur:before {
   content: "\e607";
 }
@@ -357,20 +365,8 @@
   content: "\ea8b";
 }
 
-.sy-a4k:before {
-  content: "\e60b";
-}
-
-.sy-kyikan:before {
-  content: "\e62f";
-}
-
 .sy-youtube:before {
   content: "\ea07";
-}
-
-.sy-mini4k:before {
-  content: "\e62b";
 }
 
 .sy-btnull:before {
@@ -383,10 +379,6 @@
 
 .sy-bilibili:before {
   content: "\e609";
-}
-
-.sy-acfun:before {
-  content: "\e610";
 }
 
 .sy-cctv:before {

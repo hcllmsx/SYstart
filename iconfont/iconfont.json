@@ -6,6 +6,55 @@
   "description": "思媛起始页采用图标",
   "glyphs": [
     {
+      "icon_id": "39396718",
+      "name": "文心一言",
+      "font_class": "baiduwxyy",
+      "unicode": "100b4",
+      "unicode_decimal": 65716
+    },
+    {
+      "icon_id": "39396736",
+      "name": "讯飞星火",
+      "font_class": "xunfeixh",
+      "unicode": "100b5",
+      "unicode_decimal": 65717
+    },
+    {
+      "icon_id": "39396737",
+      "name": "通义千问",
+      "font_class": "alityqw",
+      "unicode": "100b6",
+      "unicode_decimal": 65718
+    },
+    {
+      "icon_id": "39396738",
+      "name": "ChatGPT",
+      "font_class": "chatgpt",
+      "unicode": "100b7",
+      "unicode_decimal": 65719
+    },
+    {
+      "icon_id": "36973711",
+      "name": "free3d",
+      "font_class": "free3d",
+      "unicode": "100b3",
+      "unicode_decimal": 65715
+    },
+    {
+      "icon_id": "5634573",
+      "name": "aws",
+      "font_class": "aws",
+      "unicode": "f16a",
+      "unicode_decimal": 61802
+    },
+    {
+      "icon_id": "3751435",
+      "name": "猴子",
+      "font_class": "houzi",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
       "icon_id": "31921530",
       "name": "光厂vjshi",
       "font_class": "vjshi",
@@ -237,13 +286,6 @@
       "unicode_decimal": 65712
     },
     {
-      "icon_id": "6367291",
-      "name": "R",
-      "font_class": "rarbg",
-      "unicode": "e629",
-      "unicode_decimal": 58921
-    },
-    {
       "icon_id": "16650337",
       "name": "telegram",
       "font_class": "telegramsou",
@@ -256,13 +298,6 @@
       "font_class": "shipin",
       "unicode": "e644",
       "unicode_decimal": 58948
-    },
-    {
-      "icon_id": "16279159",
-      "name": "文叔叔",
-      "font_class": "wenshushu",
-      "unicode": "e61c",
-      "unicode_decimal": 58908
     },
     {
       "icon_id": "28640377",
@@ -377,13 +412,6 @@
       "unicode_decimal": 58902
     },
     {
-      "icon_id": "3277761",
-      "name": "火箭",
-      "font_class": "huojian",
-      "unicode": "e613",
-      "unicode_decimal": 58899
-    },
-    {
       "icon_id": "27485344",
       "name": "图片处理",
       "font_class": "tupianchuli",
@@ -438,13 +466,6 @@
       "font_class": "azure",
       "unicode": "e626",
       "unicode_decimal": 58918
-    },
-    {
-      "icon_id": "29656312",
-      "name": "atlantic",
-      "font_class": "atlantic",
-      "unicode": "100aa",
-      "unicode_decimal": 65706
     },
     {
       "icon_id": "19724146",
@@ -524,13 +545,6 @@
       "unicode_decimal": 58890
     },
     {
-      "icon_id": "24841448",
-      "name": "虎课网",
-      "font_class": "huke88",
-      "unicode": "e608",
-      "unicode_decimal": 58888
-    },
-    {
       "icon_id": "12620896",
       "name": "水滴",
       "font_class": "asoftmurmur",
@@ -608,32 +622,11 @@
       "unicode_decimal": 60043
     },
     {
-      "icon_id": "9696521",
-      "name": "字幕库",
-      "font_class": "a4k",
-      "unicode": "e60b",
-      "unicode_decimal": 58891
-    },
-    {
-      "icon_id": "1414366",
-      "name": "看",
-      "font_class": "kyikan",
-      "unicode": "e62f",
-      "unicode_decimal": 58927
-    },
-    {
       "icon_id": "11983519",
       "name": "youtube",
       "font_class": "youtube",
       "unicode": "ea07",
       "unicode_decimal": 59911
-    },
-    {
-      "icon_id": "18238155",
-      "name": "M",
-      "font_class": "mini4k",
-      "unicode": "e62b",
-      "unicode_decimal": 58923
     },
     {
       "icon_id": "3825075",
@@ -655,13 +648,6 @@
       "font_class": "bilibili",
       "unicode": "e609",
       "unicode_decimal": 58889
-    },
-    {
-      "icon_id": "16583069",
-      "name": "acfun",
-      "font_class": "acfun",
-      "unicode": "e610",
-      "unicode_decimal": 58896
     },
     {
       "icon_id": "26785871",
