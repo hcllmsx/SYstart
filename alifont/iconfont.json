@@ -6,6 +6,20 @@
   "description": "思媛起始页采用图标",
   "glyphs": [
     {
+      "icon_id": "39931105",
+      "name": "秘塔写作猫",
+      "font_class": "mitaso",
+      "unicode": "e715",
+      "unicode_decimal": 59157
+    },
+    {
+      "icon_id": "39529437",
+      "name": "UniStory优映",
+      "font_class": "unistory",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
       "icon_id": "9058324",
       "name": "人工智能",
       "font_class": "zhinengai",
