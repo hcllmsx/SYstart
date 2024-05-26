@@ -6,6 +6,20 @@
   "description": "思媛起始页采用图标",
   "glyphs": [
     {
+      "icon_id": "32957999",
+      "name": "namesilo",
+      "font_class": "namesilo",
+      "unicode": "e645",
+      "unicode_decimal": 58949
+    },
+    {
+      "icon_id": "34010254",
+      "name": "dynadot",
+      "font_class": "dynadot",
+      "unicode": "e671",
+      "unicode_decimal": 58993
+    },
+    {
       "icon_id": "39931105",
       "name": "秘塔写作猫",
       "font_class": "mitaso",
@@ -279,13 +293,6 @@
       "unicode_decimal": 59003
     },
     {
-      "icon_id": "27187528",
-      "name": "teambition",
-      "font_class": "teambition",
-      "unicode": "e888",
-      "unicode_decimal": 59528
-    },
-    {
       "icon_id": "22998770",
       "name": "腾讯企业邮箱",
       "font_class": "txqymail",
@@ -305,13 +312,6 @@
       "font_class": "zhongzi",
       "unicode": "100b0",
       "unicode_decimal": 65712
-    },
-    {
-      "icon_id": "16650337",
-      "name": "telegram",
-      "font_class": "telegramsou",
-      "unicode": "e6f0",
-      "unicode_decimal": 59120
     },
     {
       "icon_id": "11104798",
@@ -452,13 +452,6 @@
       "font_class": "ohttps",
       "unicode": "100ad",
       "unicode_decimal": 65709
-    },
-    {
-      "icon_id": "29657013",
-      "name": "freessl",
-      "font_class": "freessl",
-      "unicode": "100ac",
-      "unicode_decimal": 65708
     },
     {
       "icon_id": "29656836",

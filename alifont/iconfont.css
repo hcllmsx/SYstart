@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont"; /* Project id 3347159 */
-  src: url('iconfont.woff2?t=1714056032422') format('woff2'),
-       url('iconfont.woff?t=1714056032422') format('woff'),
-       url('iconfont.ttf?t=1714056032422') format('truetype');
+  src: url('iconfont.woff2?t=1716739572085') format('woff2'),
+       url('iconfont.woff?t=1716739572085') format('woff'),
+       url('iconfont.ttf?t=1716739572085') format('truetype');
 }
 
 .iconfont {
@@ -11,6 +11,14 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.sy-namesilo:before {
+  content: "\e645";
+}
+
+.sy-dynadot:before {
+  content: "\e671";
 }
 
 .sy-mitaso:before {
@@ -169,10 +177,6 @@
   content: "\e67b";
 }
 
-.sy-teambition:before {
-  content: "\e888";
-}
-
 .sy-txqymail:before {
   content: "\e631";
 }
@@ -183,10 +187,6 @@
 
 .sy-zhongzi:before {
   content: "\100b0";
-}
-
-.sy-telegramsou:before {
-  content: "\e6f0";
 }
 
 .sy-shipin:before {
@@ -267,10 +267,6 @@
 
 .sy-ohttps:before {
   content: "\100ad";
-}
-
-.sy-freessl:before {
-  content: "\100ac";
 }
 
 .sy-yuming:before {
