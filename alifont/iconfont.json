@@ -6,6 +6,13 @@
   "description": "思媛起始页采用图标",
   "glyphs": [
     {
+      "icon_id": "28663700",
+      "name": "hifini",
+      "font_class": "hifini",
+      "unicode": "e694",
+      "unicode_decimal": 59028
+    },
+    {
       "icon_id": "32957999",
       "name": "namesilo",
       "font_class": "namesilo",
