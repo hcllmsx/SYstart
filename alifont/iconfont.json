@@ -6,6 +6,13 @@
   "description": "思媛起始页采用图标",
   "glyphs": [
     {
+      "icon_id": "41163479",
+      "name": "3x3logo-绿底",
+      "font_class": "msx3x3logo-lvdi",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    },
+    {
       "icon_id": "39686589",
       "name": "网易邮箱",
       "font_class": "mail163",
