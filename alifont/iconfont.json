@@ -6,6 +6,13 @@
   "description": "思媛起始页采用图标",
   "glyphs": [
     {
+      "icon_id": "36677844",
+      "name": "Claude",
+      "font_class": "Claude",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
       "icon_id": "21479107",
       "name": "表格",
       "font_class": "biaogefile",
@@ -452,13 +459,6 @@
       "font_class": "cdkm",
       "unicode": "e650",
       "unicode_decimal": 58960
-    },
-    {
-      "icon_id": "570083",
-      "name": "doc_small",
-      "font_class": "docsmall",
-      "unicode": "e616",
-      "unicode_decimal": 58902
     },
     {
       "icon_id": "27485344",
