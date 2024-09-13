@@ -6,6 +6,13 @@
   "description": "思媛起始页采用图标",
   "glyphs": [
     {
+      "icon_id": "37232684",
+      "name": "googleCloud",
+      "font_class": "googleCloud",
+      "unicode": "e686",
+      "unicode_decimal": 59014
+    },
+    {
       "icon_id": "29516031",
       "name": "Wikipedia Logo",
       "font_class": "wikipedia",
