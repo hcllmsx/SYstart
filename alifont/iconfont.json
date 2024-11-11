@@ -6,6 +6,20 @@
   "description": "思媛起始页采用图标",
   "glyphs": [
     {
+      "icon_id": "42416926",
+      "name": "奖杯",
+      "font_class": "jiangbei",
+      "unicode": "100b9",
+      "unicode_decimal": 65721
+    },
+    {
+      "icon_id": "42208013",
+      "name": "机器人",
+      "font_class": "robot",
+      "unicode": "100b8",
+      "unicode_decimal": 65720
+    },
+    {
       "icon_id": "20317307",
       "name": "virustotal",
       "font_class": "virustotal",
