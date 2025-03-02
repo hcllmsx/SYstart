@@ -6,6 +6,20 @@
   "description": "思媛起始页采用图标",
   "glyphs": [
     {
+      "icon_id": "43481268",
+      "name": "grok",
+      "font_class": "Grok-AI-app-icon",
+      "unicode": "e630",
+      "unicode_decimal": 58928
+    },
+    {
+      "icon_id": "41561514",
+      "name": "深度求索",
+      "font_class": "shenduqiusuo",
+      "unicode": "e6bb",
+      "unicode_decimal": 59067
+    },
+    {
       "icon_id": "42416926",
       "name": "奖杯",
       "font_class": "jiangbei",
