@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont"; /* Project id 3347159 */
-  src: url('iconfont.woff2?t=1740921769659') format('woff2'),
-       url('iconfont.woff?t=1740921769659') format('woff'),
-       url('iconfont.ttf?t=1740921769659') format('truetype');
+  src: url('iconfont.woff2?t=1741163653541') format('woff2'),
+       url('iconfont.woff?t=1741163653541') format('woff'),
+       url('iconfont.ttf?t=1741163653541') format('truetype');
 }
 
 .iconfont {
@@ -13,7 +13,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.sy-Grok-AI-app-icon:before {
+.sy-android:before {
+  content: "\e610";
+}
+
+.sy-grok:before {
   content: "\e630";
 }
 

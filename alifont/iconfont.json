@@ -6,9 +6,16 @@
   "description": "思媛起始页采用图标",
   "glyphs": [
     {
+      "icon_id": "3059891",
+      "name": "安卓",
+      "font_class": "android",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
       "icon_id": "43481268",
-      "name": "grok",
-      "font_class": "Grok-AI-app-icon",
+      "name": "Grok-AI-app-icon",
+      "font_class": "grok",
       "unicode": "e630",
       "unicode_decimal": 58928
     },
