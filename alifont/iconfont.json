@@ -6,6 +6,13 @@
   "description": "思媛起始页采用图标",
   "glyphs": [
     {
+      "icon_id": "43178488",
+      "name": "ollama",
+      "font_class": "ollama",
+      "unicode": "e632",
+      "unicode_decimal": 58930
+    },
+    {
       "icon_id": "25505229",
       "name": "Vercel",
       "font_class": "Vercel",
