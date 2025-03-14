@@ -1,10 +1,17 @@
 {
   "id": "3347159",
   "name": "SY-strat",
-  "font_family": "iconfont",
+  "font_family": "iconfont_sy",
   "css_prefix_text": "sy-",
   "description": "思媛起始页采用图标",
   "glyphs": [
+    {
+      "icon_id": "16583069",
+      "name": "acfun",
+      "font_class": "acfun",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    },
     {
       "icon_id": "43433416",
       "name": "腾讯元宝",
