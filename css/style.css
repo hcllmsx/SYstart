@@ -252,7 +252,7 @@ svg.icon {
     height: 35px;
     padding: 0 5px;
     text-indent: 30px;
-    background: url(sou.svg) no-repeat 5px;
+    background: url("SYStart-logo.svg") no-repeat 5px;
     background-size: 20px;
     line-height: 35px;
     cursor: pointer;
