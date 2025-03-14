@@ -6,6 +6,13 @@
   "description": "思媛起始页采用图标",
   "glyphs": [
     {
+      "icon_id": "23531276",
+      "name": "General_mail",
+      "font_class": "General_MAIL",
+      "unicode": "e635",
+      "unicode_decimal": 58933
+    },
+    {
       "icon_id": "16583069",
       "name": "acfun",
       "font_class": "acfun",
