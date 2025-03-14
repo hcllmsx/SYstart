@@ -59,12 +59,12 @@
     <!--头部背景-视频或者图片-->
     <div class="banner-video">
         <!--视频banner，与下面的图片banner只能任选其中的一种-->
-        <!-- <video autoplay loop muted><source src="./media/banner.mp4" type="video/mp4"></video> -->
+        <video autoplay loop muted><source src="./media/banner.mp4" type="video/mp4"></video>
 
         <!--图片banner，与上面的视频banner只能任选其中的一种-->
         <!-- <img src="./media/systart-banner-a.png" alt=""> -->
-         
-        <img id="daily-bing" alt="Bing Daily Wallpaper">
+
+        <!-- <img id="daily-bing" alt="Bing Daily Wallpaper">
         <script>
             fetch('https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1')
                 .then(response => response.json())
@@ -73,7 +73,8 @@
                     document.getElementById('daily-bing').src = imgUrl;
                 })
                 .catch(error => console.error('Error fetching Bing wallpaper:', error));
-        </script>
+        </script> -->
+    <!-- 背景结束 -->
 
         <div class="bottom-cover"
             style="background-image: linear-gradient(rgba(255, 255, 255, 0) 0%, rgb(244 248 251 / 0.6) 50%, rgb(244 248 251) 100%);">
