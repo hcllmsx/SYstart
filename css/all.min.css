@@ -200,11 +200,6 @@
     /* 移除 -ms-filter 并添加标准 filter 属性 */
     transform: rotate(180deg) scale(-1, 1); /* 标准 CSS 实现旋转和镜像 */
     filter: none; /* 确保现代浏览器无特殊滤镜效果 */
-    
-    /* 如果需要兼容 IE 浏览器，可保留以下代码 */
-    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-        -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
-    }
 }
 
 .fa-flip-both,
