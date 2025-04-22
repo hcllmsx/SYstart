@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont_sy"; /* Project id 3347159 */
-  src: url('iconfont.woff2?t=1742880159039') format('woff2'),
-       url('iconfont.woff?t=1742880159039') format('woff'),
-       url('iconfont.ttf?t=1742880159039') format('truetype');
+  src: url('iconfont.woff2?t=1745291907623') format('woff2'),
+       url('iconfont.woff?t=1745291907623') format('woff'),
+       url('iconfont.ttf?t=1745291907623') format('truetype');
 }
 
 .iconfont_sy {
@@ -11,6 +11,38 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.sy-clawcloud:before {
+  content: "\ee12";
+}
+
+.sy-urllianjie:before {
+  content: "\e639";
+}
+
+.sy-GitCode:before {
+  content: "\e707";
+}
+
+.sy-uutool:before {
+  content: "\e637";
+}
+
+.sy-emoji-se:before {
+  content: "\e638";
+}
+
+.sy-emoji-huojian:before {
+  content: "\ed74";
+}
+
+.sy-huoshanyinqing:before {
+  content: "\e7c2";
+}
+
+.sy-canva:before {
+  content: "\e73d";
 }
 
 .sy-netlify:before {
@@ -335,10 +367,6 @@
 
 .sy-tupianchuli:before {
   content: "\e612";
-}
-
-.sy-suowo:before {
-  content: "\100ae";
 }
 
 .sy-ohttps:before {
