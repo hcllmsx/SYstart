@@ -6,6 +6,27 @@
   "description": "思媛起始页采用图标",
   "glyphs": [
     {
+      "icon_id": "24164622",
+      "name": "华为",
+      "font_class": "huaweicloud",
+      "unicode": "e63a",
+      "unicode_decimal": 58938
+    },
+    {
+      "icon_id": "44280419",
+      "name": "豆包",
+      "font_class": "doubao",
+      "unicode": "ea85",
+      "unicode_decimal": 60037
+    },
+    {
+      "icon_id": "44280555",
+      "name": "纳米AI",
+      "font_class": "namiAI",
+      "unicode": "eaf4",
+      "unicode_decimal": 60148
+    },
+    {
       "icon_id": "14619213",
       "name": "claw",
       "font_class": "clawcloud",

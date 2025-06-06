@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont_sy"; /* Project id 3347159 */
-  src: url('iconfont.woff2?t=1745291907623') format('woff2'),
-       url('iconfont.woff?t=1745291907623') format('woff'),
-       url('iconfont.ttf?t=1745291907623') format('truetype');
+  src: url('iconfont.woff2?t=1749196103041') format('woff2'),
+       url('iconfont.woff?t=1749196103041') format('woff'),
+       url('iconfont.ttf?t=1749196103041') format('truetype');
 }
 
 .iconfont_sy {
@@ -11,6 +11,18 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.sy-huaweicloud:before {
+  content: "\e63a";
+}
+
+.sy-doubao:before {
+  content: "\ea85";
+}
+
+.sy-namiAI:before {
+  content: "\eaf4";
 }
 
 .sy-clawcloud:before {
