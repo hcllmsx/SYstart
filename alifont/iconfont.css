@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont_sy"; /* Project id 3347159 */
-  src: url('iconfont.woff2?t=1754209539458') format('woff2'),
-       url('iconfont.woff?t=1754209539458') format('woff'),
-       url('iconfont.ttf?t=1754209539458') format('truetype');
+  src: url('iconfont.woff2?t=1757342716461') format('woff2'),
+       url('iconfont.woff?t=1757342716461') format('woff'),
+       url('iconfont.ttf?t=1757342716461') format('truetype');
 }
 
 .iconfont_sy {
@@ -11,6 +11,14 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.sy-heycan-logo:before {
+  content: "\e63b";
+}
+
+.sy-cgjoy-logo:before {
+  content: "\e63d";
 }
 
 .sy-ename:before {

@@ -6,6 +6,20 @@
   "description": "思媛起始页采用图标",
   "glyphs": [
     {
+      "icon_id": "45482439",
+      "name": "heycan-logo",
+      "font_class": "heycan-logo",
+      "unicode": "e63b",
+      "unicode_decimal": 58939
+    },
+    {
+      "icon_id": "45455314",
+      "name": "cgjoy-logo",
+      "font_class": "cgjoy-logo",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    },
+    {
       "icon_id": "26435506",
       "name": "易名网",
       "font_class": "ename",
