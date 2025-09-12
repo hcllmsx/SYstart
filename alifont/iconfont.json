@@ -6,6 +6,13 @@
   "description": "思媛起始页采用图标",
   "glyphs": [
     {
+      "icon_id": "27239526",
+      "name": "sap",
+      "font_class": "sap",
+      "unicode": "e737",
+      "unicode_decimal": 59191
+    },
+    {
       "icon_id": "45482439",
       "name": "heycan-logo",
       "font_class": "heycan-logo",
