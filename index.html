@@ -1172,9 +1172,8 @@
     </div>
     <!--版权信息开始-->
     <p class="mt-5 mb-3 text-muted text-center">©
-        <script>document.write(new Date().getFullYear())</script> <a href="https://ihcll.cn/">火车啦啦 - 思媛起始页</a>
+        <script>document.write(new Date().getFullYear())</script> <a href="https://ihcll.cn/">火车啦啦 - 思媛起始页</a> 丨 加载用时：<span id="loadTime"></span> ms
     </p>
-    <p class="mt-2 mb-3 text-muted text-center">丨 加载用时：<span id="loadTime"></span> ms</p>
     <!--
         作者:D.Young
         主页：https://blog.5iux.cn
@@ -1191,8 +1190,9 @@
     <script>
         // 计算页面加载时间
         window.addEventListener('load', function() {
-            var loadTime = performance.timing.loadEventEnd - performance.timing.navigationStart;
-            document.getElementById('loadTime').innerText = loadTime;
+            const nav = performance.getEntriesByType('navigation')[0];
+            const loadTime = nav.loadEventEnd - nav.fetchStart;
+            document.getElementById('loadTime').innerText = Math.round(loadTime);
         });
     </script>
     <script>
