@@ -157,7 +157,7 @@
                     <use xlink:href="#sy-fldianying"></use>
                 </svg> 电影电视剧</li> <!-- 此分类的名字 -->
 
-            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a href="https://tv.cctv.com/live/index.shtml" title="这不用多说了吧"
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a href="https://tv.cctv.com/live/cctv13/" title="这不用多说了吧"
                     target="_blank">
                     <svg class="icon" aria-hidden="true">
                         <use xlink:href="#sy-cctv"></use>
@@ -1174,6 +1174,7 @@
     <p class="mt-5 mb-3 text-muted text-center">©
         <script>document.write(new Date().getFullYear())</script> <a href="https://ihcll.cn/">火车啦啦 - 思媛起始页</a>
     </p>
+    <p class="mt-2 mb-3 text-muted text-center">丨 加载用时：<span id="loadTime"></span> ms</p>
     <!--
         作者:D.Young
         主页：https://blog.5iux.cn
@@ -1184,9 +1185,16 @@
         初始修改日期：2022-05-12
         修改：火车啦啦
         Github地址：https://github.com/hcllmsx/SYstart
-        更新时间：2026.03.25
+        更新时间：2026.03.26
     -->
     <!--版权信息结束-->
+    <script>
+        // 计算页面加载时间
+        window.addEventListener('load', function() {
+            var loadTime = performance.timing.loadEventEnd - performance.timing.navigationStart;
+            document.getElementById('loadTime').innerText = loadTime;
+        });
+    </script>
     <script>
         eval(function (e, t, a, c, i, n) {
             if (i = function (e) {
