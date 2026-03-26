@@ -1176,10 +1176,18 @@
     <!--版权信息结束-->
 
     <script>
-        // 计算页面加载时间
+        // 计算页面加载时间（兼容不同浏览器）
         window.addEventListener('load', function () {
-            const nav = performance.getEntriesByType('navigation')[0];
-            const loadTime = nav.loadEventEnd - nav.navigationStart;
+            let loadTime = NaN;
+            const navEntry = performance.getEntriesByType('navigation')[0];
+            if (navEntry && navEntry.loadEventEnd > 0 && navEntry.navigationStart > 0) {
+                loadTime = navEntry.loadEventEnd - navEntry.navigationStart;
+            } else if (performance.timing && performance.timing.loadEventEnd > 0 && performance.timing.navigationStart > 0) {
+                loadTime = performance.timing.loadEventEnd - performance.timing.navigationStart;
+            }
+            if (!Number.isFinite(loadTime) || loadTime < 0) {
+                loadTime = 0;
+            }
             document.getElementById('loadTime').innerText = Math.round(loadTime);
         });
     </script>
