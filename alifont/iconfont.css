@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont_sy"; /* Project id 3347159 */
-  src: url('iconfont.woff2?t=1757692163085') format('woff2'),
-       url('iconfont.woff?t=1757692163085') format('woff'),
-       url('iconfont.ttf?t=1757692163085') format('truetype');
+  src: url('iconfont.woff2?t=1775663324669') format('woff2'),
+       url('iconfont.woff?t=1775663324669') format('woff'),
+       url('iconfont.ttf?t=1775663324669') format('truetype');
 }
 
 .iconfont_sy {
@@ -11,6 +11,26 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.sy-qitiantuihuan:before {
+  content: "\e642";
+}
+
+.sy-yunpan123:before {
+  content: "\e682";
+}
+
+.sy-dns:before {
+  content: "\e6c5";
+}
+
+.sy-google:before {
+  content: "\ea0c";
+}
+
+.sy-Cloud_Server:before {
+  content: "\e641";
 }
 
 .sy-sap:before {
@@ -335,10 +355,6 @@
 
 .sy-nainiukuaichuan:before {
   content: "\e627";
-}
-
-.sy-yunpan123:before {
-  content: "\e61b";
 }
 
 .sy-lanzouyun:before {

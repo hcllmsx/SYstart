@@ -6,6 +6,41 @@
   "description": "思媛起始页采用图标",
   "glyphs": [
     {
+      "icon_id": "8785500",
+      "name": "七天退换",
+      "font_class": "qitiantuihuan",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    },
+    {
+      "icon_id": "37088449",
+      "name": "123云盘",
+      "font_class": "yunpan123",
+      "unicode": "e682",
+      "unicode_decimal": 59010
+    },
+    {
+      "icon_id": "16815965",
+      "name": "dns",
+      "font_class": "dns",
+      "unicode": "e6c5",
+      "unicode_decimal": 59077
+    },
+    {
+      "icon_id": "11983544",
+      "name": "google",
+      "font_class": "google",
+      "unicode": "ea0c",
+      "unicode_decimal": 59916
+    },
+    {
+      "icon_id": "33574663",
+      "name": "Cloud_Server",
+      "font_class": "Cloud_Server",
+      "unicode": "e641",
+      "unicode_decimal": 58945
+    },
+    {
       "icon_id": "27239526",
       "name": "sap",
       "font_class": "sap",
@@ -571,13 +606,6 @@
       "font_class": "nainiukuaichuan",
       "unicode": "e627",
       "unicode_decimal": 58919
-    },
-    {
-      "icon_id": "10954887",
-      "name": "123",
-      "font_class": "yunpan123",
-      "unicode": "e61b",
-      "unicode_decimal": 58907
     },
     {
       "icon_id": "25332791",
